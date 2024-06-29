@@ -1,0 +1,19 @@
+/* Initially hide all invalid feedback messages */
+.invalid-feedback {
+    display: none;
+}
+
+/* Display invalid feedback messages when the corresponding input has the 'is-invalid' class */
+.is-invalid .invalid-feedback {
+    display: block;
+}
+
+/* Apply a red border to input fields with the 'is-invalid' class */
+.is-invalid input {
+    border-color: #dc3545; /* Bootstrap danger color */
+}
+
+/* Apply a green border to input fields with the 'is-valid' class */
+.is-valid input {
+    border-color: #28a745; /* Bootstrap success color */
+}
